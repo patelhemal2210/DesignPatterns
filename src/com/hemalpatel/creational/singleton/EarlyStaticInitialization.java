@@ -3,9 +3,11 @@ package com.hemalpatel.creational.singleton;
 /**
  * 
  * @author Hemal Patel
- * 
- * The only advantage we get in @see EarlyStaticInitialization over 
- * @see EarlyInitialization is that we get a chance to handle the exception if any
+ */
+
+/**
+ * The only advantage we get in {@link EarlyStaticInitialization} over 
+ * {@link EarlyInitialization} is that we get a chance to handle the exception if any
  * 
  * All other usability remains the same at @ EarlyInitialiation
  * 
@@ -38,7 +40,7 @@ public class EarlyStaticInitialization {
 	/**
 	 * Static method that returns the instance, this is the global access point 
 	 * to get the instance of this class
-	 * @return @see EarlyInitialization
+	 * @return {@link EarlyStaticInitialization}
 	 */
 	public static EarlyStaticInitialization getInstance() {
 		return instance;

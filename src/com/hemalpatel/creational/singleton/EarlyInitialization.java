@@ -3,8 +3,10 @@ package com.hemalpatel.creational.singleton;
 /**
  * 
  * @author Hemal Patel
- * 
- * In @see EarlyInitialization, the instance is created when the class is loaded
+ */
+
+/**
+ * In {@link EarlyInitialization}, the instance is created when the class is loaded
  * and that is the disadvantage of this method. 
  * 
  * Even if your application does not require the instance it is created into the
@@ -18,6 +20,7 @@ package com.hemalpatel.creational.singleton;
  *
  * 
  */
+
 public class EarlyInitialization {
 
 	/**
@@ -35,7 +38,7 @@ public class EarlyInitialization {
 	/**
 	 * Static method that returns the instance, this is the global access point 
 	 * to get the instance of this class
-	 * @return @see EarlyInitialization
+	 * @return {@link EarlyInitialization}
 	 */
 	public static EarlyInitialization getInstance() {
 		return instance;
