@@ -1,6 +1,12 @@
-package com.hemalpatel.creational.singleton;
+package com.hemalpatel.creational.singleton.executor;
 
 import com.hemalpatel.base.BaseExecutor;
+import com.hemalpatel.creational.singleton.AdvancedThreadSafeInitialization;
+import com.hemalpatel.creational.singleton.BillPughSingleton;
+import com.hemalpatel.creational.singleton.EarlyInitialization;
+import com.hemalpatel.creational.singleton.EarlyStaticInitialization;
+import com.hemalpatel.creational.singleton.LazyInitialization;
+import com.hemalpatel.creational.singleton.ThreadSafeInitialization;
 
 /**
  * 
@@ -29,13 +35,22 @@ public class SingletonExecutor implements BaseExecutor {
 		threadSafeInitializationTest();
 		advancedThreadSafeInitializationTest();
 		billPughInitializationTest();
+		
+		printFooter();
 
 	}
 	
-
-	private void printTitle() {
+	
+	public void printTitle() {
+		System.out.println("\n*********************************");
 		System.out.println("-- Creational Patterns");
 		System.out.println("---- Singleton Pattern\n");
+	}
+	
+	public void printFooter() {
+		System.out.println("\n-- END OF Singleton Pattern --");
+		System.out.println("*********************************\n");
+		
 	}
 
 	private void earlyInitializationTest() {

@@ -12,4 +12,6 @@ package com.hemalpatel.base;
 public interface BaseExecutor {
 
 	public void run();
+	public void printTitle();
+	public void printFooter();
 }
