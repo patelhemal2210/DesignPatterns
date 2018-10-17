@@ -4,6 +4,7 @@ import com.hemalpatel.base.BaseExecutor;
 import com.hemalpatel.creational.abstractfactorypattern.executor.AbstractFactoryPatternExecutor;
 import com.hemalpatel.creational.builderpattern.executor.BuilderPatternExecutor;
 import com.hemalpatel.creational.factorypattern.executor.FactoryPatternExecutor;
+import com.hemalpatel.creational.prototypepattern.executor.PrototypePatternExecutor;
 import com.hemalpatel.creational.singleton.executor.SingletonExecutor;
 
 /**
@@ -42,6 +43,12 @@ public class PatternTester {
 		 * Call to Builder Pattern executor
 		 */
 		executor = (BuilderPatternExecutor) new BuilderPatternExecutor();
+		executor.run();
+		
+		/***
+		 * Call to Prototype Pattern executor
+		 */
+		executor = (PrototypePatternExecutor) new PrototypePatternExecutor();
 		executor.run();
 		
 
