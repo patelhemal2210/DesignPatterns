@@ -6,6 +6,7 @@ import com.hemalpatel.creational.builderpattern.executor.BuilderPatternExecutor;
 import com.hemalpatel.creational.factorypattern.executor.FactoryPatternExecutor;
 import com.hemalpatel.creational.prototypepattern.executor.PrototypePatternExecutor;
 import com.hemalpatel.creational.singleton.executor.SingletonExecutor;
+import com.hemalpatel.proxy.executor.ProxyPatternExecutor;
 import com.hemalpatel.structural.adapter.executor.AdapterPatternExecutor;
 import com.hemalpatel.structural.composite.executor.CompositePatternExecutor;
 
@@ -64,6 +65,12 @@ public class PatternTester {
 		 * Call to Composite Pattern executor
 		 */
 		executor = (CompositePatternExecutor) new CompositePatternExecutor();
+		executor.run();
+		
+		/***
+		 * Call to Proxy Pattern executor
+		 */
+		executor = (ProxyPatternExecutor) new ProxyPatternExecutor();
 		executor.run();
 		
 		
