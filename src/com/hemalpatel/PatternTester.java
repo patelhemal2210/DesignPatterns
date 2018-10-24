@@ -9,6 +9,7 @@ import com.hemalpatel.creational.singleton.executor.SingletonExecutor;
 import com.hemalpatel.proxy.executor.ProxyPatternExecutor;
 import com.hemalpatel.structural.adapter.executor.AdapterPatternExecutor;
 import com.hemalpatel.structural.composite.executor.CompositePatternExecutor;
+import com.hemalpatel.structural.facade.executor.FacadePatternExecutor;
 import com.hemalpatel.structural.flyweight.executor.FlyWeightPatternExecutor;
 
 /**
@@ -79,6 +80,12 @@ public class PatternTester {
 		 * Call to FlyWeight Pattern executor
 		 */
 		executor = (FlyWeightPatternExecutor) new FlyWeightPatternExecutor();
+		executor.run();
+		
+		/***
+		 * Call to Facade Pattern executor
+		 */
+		executor = (FacadePatternExecutor) new FacadePatternExecutor();
 		executor.run();
 		
 		
