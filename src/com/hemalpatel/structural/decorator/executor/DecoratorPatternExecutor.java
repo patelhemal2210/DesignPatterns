@@ -25,13 +25,16 @@ public class DecoratorPatternExecutor implements BaseExecutor{
 
 	@Override
 	public void printTitle() {
-		// TODO Auto-generated method stub
+		System.out.println("\n*********************************");
+		System.out.println("-- Structural Patterns");
+		System.out.println("---- Decorator Pattern\n");
 		
 	}
 
 	@Override
 	public void printFooter() {
-		// TODO Auto-generated method stub
+		System.out.println("\n-- END OF Dacorator Pattern --");
+		System.out.println("*********************************\n");		
 		
 	}
 
