@@ -1,6 +1,7 @@
 package com.hemalpatel;
 
 import com.hemalpatel.base.BaseExecutor;
+import com.hemalpatel.behavioral.template.executor.TemplatePatternExecutor;
 import com.hemalpatel.creational.abstractfactorypattern.executor.AbstractFactoryPatternExecutor;
 import com.hemalpatel.creational.builderpattern.executor.BuilderPatternExecutor;
 import com.hemalpatel.creational.factorypattern.executor.FactoryPatternExecutor;
@@ -100,6 +101,12 @@ public class PatternTester {
 		 * Call to Decorator Pattern executor
 		 */
 		executor = (DecoratorPatternExecutor) new DecoratorPatternExecutor();
+		executor.run();
+		
+		/***
+		 * Call to Template Pattern executor
+		 */
+		executor = (TemplatePatternExecutor) new TemplatePatternExecutor();
 		executor.run();
 		
 		
