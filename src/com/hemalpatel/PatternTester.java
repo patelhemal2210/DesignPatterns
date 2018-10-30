@@ -1,6 +1,7 @@
 package com.hemalpatel;
 
 import com.hemalpatel.base.BaseExecutor;
+import com.hemalpatel.behavioral.mediator.executor.MediatorPatternExecutor;
 import com.hemalpatel.behavioral.template.executor.TemplatePatternExecutor;
 import com.hemalpatel.creational.abstractfactorypattern.executor.AbstractFactoryPatternExecutor;
 import com.hemalpatel.creational.builderpattern.executor.BuilderPatternExecutor;
@@ -108,6 +109,13 @@ public class PatternTester {
 		 */
 		executor = (TemplatePatternExecutor) new TemplatePatternExecutor();
 		executor.run();
+		
+		/***
+		 * Call to Mediator Pattern executor
+		 */
+		executor = (MediatorPatternExecutor) new MediatorPatternExecutor();
+		executor.run();
+		
 		
 		
 
