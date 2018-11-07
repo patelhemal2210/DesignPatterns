@@ -5,6 +5,7 @@ import com.hemalpatel.behavioral.chainofresponsibility.executor.ChainOfResponsib
 import com.hemalpatel.behavioral.command.executor.CommandPatternExecutor;
 import com.hemalpatel.behavioral.mediator.executor.MediatorPatternExecutor;
 import com.hemalpatel.behavioral.observer.executor.ObserverPatternExecutor;
+import com.hemalpatel.behavioral.state.executor.StatePatternExecutor;
 import com.hemalpatel.behavioral.strategy.executor.StrategyPatternExecutor;
 import com.hemalpatel.behavioral.template.executor.TemplatePatternExecutor;
 import com.hemalpatel.creational.abstractfactorypattern.executor.AbstractFactoryPatternExecutor;
@@ -142,6 +143,12 @@ public class PatternTester {
 		 * Call to Command Pattern executor
 		 */
 		executor = (CommandPatternExecutor) new CommandPatternExecutor();
+		executor.run();
+		
+		/***
+		 * Call to State Pattern executor
+		 */
+		executor = (StatePatternExecutor) new StatePatternExecutor();
 		executor.run();
 		
 		
