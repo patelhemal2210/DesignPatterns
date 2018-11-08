@@ -8,6 +8,7 @@ import com.hemalpatel.behavioral.observer.executor.ObserverPatternExecutor;
 import com.hemalpatel.behavioral.state.executor.StatePatternExecutor;
 import com.hemalpatel.behavioral.strategy.executor.StrategyPatternExecutor;
 import com.hemalpatel.behavioral.template.executor.TemplatePatternExecutor;
+import com.hemalpatel.behavioral.visitor.executor.VisitorPatternExecutor;
 import com.hemalpatel.creational.abstractfactorypattern.executor.AbstractFactoryPatternExecutor;
 import com.hemalpatel.creational.builderpattern.executor.BuilderPatternExecutor;
 import com.hemalpatel.creational.factorypattern.executor.FactoryPatternExecutor;
@@ -151,6 +152,11 @@ public class PatternTester {
 		executor = (StatePatternExecutor) new StatePatternExecutor();
 		executor.run();
 		
+		/***
+		 * Call to Visitor Pattern executor
+		 */
+		executor = (VisitorPatternExecutor) new VisitorPatternExecutor();
+		executor.run();
 		
 		
 
