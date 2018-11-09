@@ -3,6 +3,7 @@ package com.hemalpatel;
 import com.hemalpatel.base.BaseExecutor;
 import com.hemalpatel.behavioral.chainofresponsibility.executor.ChainOfResponsibilityPatternExecutor;
 import com.hemalpatel.behavioral.command.executor.CommandPatternExecutor;
+import com.hemalpatel.behavioral.interpreter.executor.InterpreterPatternExecutor;
 import com.hemalpatel.behavioral.mediator.executor.MediatorPatternExecutor;
 import com.hemalpatel.behavioral.observer.executor.ObserverPatternExecutor;
 import com.hemalpatel.behavioral.state.executor.StatePatternExecutor;
@@ -156,6 +157,12 @@ public class PatternTester {
 		 * Call to Visitor Pattern executor
 		 */
 		executor = (VisitorPatternExecutor) new VisitorPatternExecutor();
+		executor.run();
+		
+		/***
+		 * Call to Interpreter Pattern executor
+		 */
+		executor = (InterpreterPatternExecutor) new InterpreterPatternExecutor();
 		executor.run();
 		
 		
